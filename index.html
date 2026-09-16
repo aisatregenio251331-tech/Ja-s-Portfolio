@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Allya Jane Regenio — student, aspiring author, and visual creative.">
+  <meta name="theme-color" content="#f5f4ef">
+  <title>Allya Jane Regenio — Dream it. Learn it. Build it.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script defer src="assets/vendor/gsap.min.js"></script>
+  <script defer src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script defer src="assets/vendor/lenis.min.js"></script>
+  <script defer src="assets/vendor/three.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="loader" aria-hidden="true">
+    <div class="loader__top">
+      <span>ALLYA JANE REGENIO</span>
+      <span class="mono">PORTFOLIO / 2026</span>
+    </div>
+    <div class="loader__name" data-loader-name>ALLYA</div>
+    <div class="loader__bottom">
+      <span>LOADING CREATIVE SYSTEM</span>
+      <span class="loader__count" data-loader-count>00</span>
+    </div>
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <div class="cursor" aria-hidden="true">
+    <span class="cursor__dot"></span>
+    <span class="cursor__label"></span>
+  </div>
+
+  <header class="site-nav">
+    <a class="nav-brand" href="#top" data-cursor="VIEW">AJR<span>/</span>26</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about" data-cursor="VIEW"><span>01</span> ABOUT</a>
+      <a href="#skills" data-cursor="VIEW"><span>02</span> SKILLS</a>
+      <a href="#stories" data-cursor="READ"><span>03</span> STORIES</a>
+      <a href="#archive" data-cursor="VIEW"><span>04</span> ARCHIVE</a>
+      <a href="#contact" data-cursor="VIEW"><span>05</span> CONTACT</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <span>LIGHT</span><i></i><span>DARK</span>
+      </button>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero__noise" aria-hidden="true"></div>
+
+      <div class="hero__meta hero__meta--left">
+        <span class="section-index">01 / ABOUT</span>
+        <span>STUDENT / WRITER / CREATIVE</span>
+        <span>PHILIPPINES</span>
+      </div>
+
+      <div class="hero__year mono">PERSONAL ARCHIVE<br>2026—∞</div>
+
+      <div class="hero__title-wrap">
+        <h1 id="hero-title" class="hero__title">
+          <span>ALLYA</span>
+          <span>JANE</span>
+          <span>REGENIO</span>
+        </h1>
+      </div>
+
+      <figure class="hero-portrait" data-cursor="VIEW">
+        <div class="portrait-frame portrait-frame--back"></div>
+        <div class="portrait-frame portrait-frame--front">
+          <img src="assets/allya-portrait.png" alt="Portrait of Allya Jane Regenio" onerror="this.parentElement.classList.add('image-missing')">
+          <span class="image-placeholder">PORTRAIT<br>GOES HERE</span>
+        </div>
+        <figcaption><span>PORTRAIT / 001</span><span>ALLYA JANE</span></figcaption>
+      </figure>
+
+      <div class="hero__statement">
+        <span class="mono">MANIFESTO / 001</span>
+        <p>DREAM IT.<br>LEARN IT.<br>BUILD IT.</p>
+      </div>
+
+      <div class="scroll-mark"><span>SCROLL</span><i></i><span>↓</span></div>
+    </section>
+
+    <section class="about section-shell" id="about">
+      <div class="section-rule"><span>02</span><span>ABOUT / SELF-PORTRAIT</span><span>KEEP LOOKING</span></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">WHO I AM</p>
+          <h2 class="display-title">ABOUT<br><em>ME</em></h2>
+          <div class="bio">
+            <p>I'm Allya Jane Regenio, a student who is continuously learning and discovering what I can do. I may not have everything figured out yet, but I believe that every experience helps me grow.</p>
+            <p>I enjoy learning new things and expressing myself creatively. I'm also an aspiring author who finds comfort in the world of stories.</p>
+            <p>I enjoy writing because it gives me a place where my imagination can freely exist. I love creating characters, building different worlds, and turning simple ideas into stories.</p>
+            <p>Music is one of the things that inspires my creativity, especially when I'm writing. Sometimes, a song can give me an idea for a character, a scene, or even an entire story.</p>
+            <p>My dream is to become someone who is confident, successful, and happy with the life I built. I want to develop my skills, overcome my weaknesses, and continue learning.</p>
+            <p>I know that reaching my dreams will take time and effort, but I'm willing to grow through every challenge along the way.</p>
+          </div>
+        </div>
+
+        <div class="photo-stack" aria-label="Creative process gallery">
+          <div class="stack-label mono">A SMALL ARCHIVE OF<br>HOW I SEE THINGS</div>
+          <div class="photo-card photo-card--1" data-card="1">
+            <div class="photo-card__media photo-placeholder photo-placeholder--paper"><img src="assets/about-1.jpg" alt="Creative process photo" loading="lazy" onerror="this.remove()"><span>IMAGE<br>01</span></div>
+            <div class="photo-card__caption"><b>01 / CREATIVE PROCESS</b><span>IDEAS BEFORE THEY BECOME THINGS.</span></div>
+          </div>
+          <div class="photo-card photo-card--2" data-card="2">
+            <div class="photo-card__media photo-placeholder photo-placeholder--ink"><img src="assets/about-2.jpg" alt="Stories and worlds photo" loading="lazy" onerror="this.remove()"><span>IMAGE<br>02</span></div>
+            <div class="photo-card__caption"><b>02 / STORIES</b><span>WORLDS BUILT FROM SMALL THOUGHTS.</span></div>
+          </div>
+          <div class="photo-card photo-card--3" data-card="3">
+            <div class="photo-card__media photo-placeholder photo-placeholder--photo"><img src="assets/about-3.jpg" alt="Visuals photo" loading="lazy" onerror="this.remove()"><span>IMAGE<br>03</span></div>
+            <div class="photo-card__caption"><b>03 / VISUALS</b><span>LOOKING CLOSER AT ORDINARY MOMENTS.</span></div>
+          </div>
+          <div class="photo-card photo-card--4" data-card="4">
+            <div class="photo-card__media photo-placeholder photo-placeholder--dark"><img src="assets/about-4.jpg" alt="Moments photo" loading="lazy" onerror="this.remove()"><span>IMAGE<br>04</span></div>
+            <div class="photo-card__caption"><b>04 / MOMENTS</b><span>KEEPING WHAT FEELS WORTH REMEMBERING.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="philosophy" id="philosophy">
+      <div class="philosophy__label mono">03 / PERSONAL PHILOSOPHY</div>
+      <div class="philosophy__line"><span>DREAM</span><b>IT.</b></div>
+      <div class="philosophy__line philosophy__line--offset"><span>LEARN</span><b>IT.</b></div>
+      <div class="philosophy__line"><span>BUILD</span><b>IT.</b></div>
+      <div class="philosophy__foot">THE IDEA IS ONLY THE BEGINNING.</div>
+    </section>
+
+    <section class="skills section-shell" id="skills">
+      <div class="section-rule"><span>04</span><span>WHAT I CREATE</span><span>SELECT / EXPLORE</span></div>
+      <div class="skills-head">
+        <p class="eyebrow">SKILLS / PRACTICE</p>
+        <h2 class="display-title">WHAT I<br><em>CREATE</em></h2>
+      </div>
+      <div class="skill-list">
+        <button class="skill-row" data-skill="WRITING A NOVEL" data-cursor="EXPLORE">
+          <span class="skill-num">01</span><span class="skill-name">WRITING A NOVEL</span><span class="skill-mark">↗</span>
+        </button>
+        <button class="skill-row" data-skill="DRAWING" data-cursor="EXPLORE">
+          <span class="skill-num">02</span><span class="skill-name">DRAWING</span><span class="skill-mark">↗</span>
+        </button>
+        <button class="skill-row" data-skill="DESIGNING" data-cursor="EXPLORE">
+          <span class="skill-num">03</span><span class="skill-name">DESIGNING</span><span class="skill-mark">↗</span>
+        </button>
+        <button class="skill-row" data-skill="PHOTOGRAPHY" data-cursor="EXPLORE">
+          <span class="skill-num">04</span><span class="skill-name">PHOTOGRAPHY</span><span class="skill-mark">↗</span>
+        </button>
+        <button class="skill-row" data-skill="EDITING" data-cursor="EXPLORE">
+          <span class="skill-num">05</span><span class="skill-name">EDITING</span><span class="skill-mark">↗</span>
+        </button>
+      </div>
+      <div class="skill-preview" aria-hidden="true"><img data-skill-preview-img src="assets/skills-1.jpg" alt="" loading="lazy"><span data-skill-preview>SELECT A PRACTICE</span></div>
+    </section>
+
+    <section class="stories" id="stories">
+      <div class="section-rule"><span>05</span><span>WRITING / IMAGINATION</span><span>READ BETWEEN</span></div>
+      <div class="stories__grid">
+        <div class="stories__intro">
+          <p class="eyebrow">THE WRITER'S NOTEBOOK</p>
+          <h2 class="display-title">STORIES<br><em>LIVE HERE.</em></h2>
+          <p class="stories__quote">“Writing gives my imagination a place to exist.”</p>
+        </div>
+        <div class="manuscript">
+          <div class="manuscript__top mono"><span>MANUSCRIPT / 001</span><span>PAGE 01—∞</span></div>
+          <div class="manuscript__body">
+            <p class="story-line">I start with a thought.</p>
+            <p class="story-line">Then a question.</p>
+            <p class="story-line">Then someone appears — a character who did not exist a moment ago.</p>
+            <p class="story-line story-line--big">A WORLD FOLLOWS.</p>
+            <p class="story-line">Writing lets simple ideas become places, people, memories, and impossible things.</p>
+            <p class="story-line">Sometimes music becomes the doorway. Sometimes an image. Sometimes just a sentence that refuses to leave.</p>
+            <p class="story-line story-line--last">The page is where I let them stay.</p>
+          </div>
+          <div class="manuscript__scribble" aria-hidden="true">✳</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="archive section-shell" id="archive">
+      <div class="section-rule"><span>06</span><span>PHOTOGRAPHY / VISUAL ARCHIVE</span><span>INDEX 001—006</span></div>
+      <div class="archive-head">
+        <p class="eyebrow">LOOKING / COLLECTING</p>
+        <h2 class="display-title">VISUAL<br><em>ARCHIVE</em></h2>
+      </div>
+        <div class="archive-grid">
+        <figure class="archive-item archive-item--a" data-cursor="VIEW"><div class="archive-img img-a"><img src="assets/archive-1.jpg" alt="Archive photo 1" loading="lazy" onerror="this.remove()"><span>IMAGE / 001</span></div><figcaption>QUIET / FRAME 01</figcaption></figure>
+        <figure class="archive-item archive-item--b" data-cursor="VIEW"><div class="archive-img img-b"><img src="assets/archive-2.jpg" alt="Archive photo 2" loading="lazy" onerror="this.remove()"><span>IMAGE / 002</span></div><figcaption>LIGHT / FRAME 02</figcaption></figure>
+        <figure class="archive-item archive-item--c" data-cursor="VIEW"><div class="archive-img img-c"><img src="assets/archive-3.jpg" alt="Archive photo 3" loading="lazy" onerror="this.remove()"><span>IMAGE / 003</span></div><figcaption>DETAIL / FRAME 03</figcaption></figure>
+        <figure class="archive-item archive-item--d" data-cursor="VIEW"><div class="archive-img img-d"><img src="assets/archive-4.jpg" alt="Archive photo 4" loading="lazy" onerror="this.remove()"><span>IMAGE / 004</span></div><figcaption>PLACE / FRAME 04</figcaption></figure>
+        <figure class="archive-item archive-item--e" data-cursor="VIEW"><div class="archive-img img-e"><img src="assets/archive-5.jpg" alt="Archive photo 5" loading="lazy" onerror="this.remove()"><span>IMAGE / 005</span></div><figcaption>MOMENT / FRAME 05</figcaption></figure>
+        <figure class="archive-item archive-item--f" data-cursor="VIEW"><div class="archive-img img-f"><img src="assets/archive-6.jpg" alt="Archive photo 6" loading="lazy" onerror="this.remove()"><span>IMAGE / 006</span></div><figcaption>MEMORY / FRAME 06</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="music" id="music">
+      <div class="section-rule"><span>07</span><span>SOUNDTRACK FOR IMAGINATION</span><span>PLAY / PAUSE</span></div>
+      <div class="music-grid">
+        <div>
+          <p class="eyebrow">MUSIC / INSPIRATION</p>
+          <h2 class="display-title">SOUNDTRACK<br><em>FOR<br>IMAGINATION</em></h2>
+        </div>
+        <div class="music-copy">
+          <p>Music is one of the things that inspires my creativity, especially when I'm writing. A song can become a mood, a scene, a character, or the beginning of an entire story.</p>
+          <div class="player">
+            <button class="play-button" type="button" aria-label="Play music"><span>PLAY</span><i>▶</i></button>
+            <button class="track is-active" type="button" data-track="assets/Kathangisip.mp3"><span>TRACK 01</span><b>KATHANG ISIP</b><em>MOIRA DELA TORRE</em></button>
+            <button class="track" type="button" data-track="assets/Isalang.mp3"><span>TRACK 02</span><b>ISALANG</b><em>MOIRA DELA TORRE</em></button>
+            <button class="track" type="button" data-track="assets/Tagpuan.mp3"><span>TRACK 03</span><b>TAGPUAN</b><em>MOIRA DELA TORRE</em></button>
+            <div class="now-playing mono" data-now-playing hidden></div>
+            <div class="waveform" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__top mono"><span>08 / CONTACT</span><span>LET'S MAKE SOMETHING EXIST.</span></div>
+      <div class="contact__title">
+        <span>LET'S MAKE</span>
+        <span>SOMETHING</span>
+        <span>EXIST<span class="dot">.</span></span>
+      </div>
+      <div class="contact__bottom">
+        <div>
+          <p class="eyebrow">ALLYA JANE REGENIO</p>
+          <p>STUDENT / WRITER / CREATIVE</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:allyaregenio9@gmail.com" data-cursor="WRITE">EMAIL ↗</a>
+          <a href="https://www.instagram.com/urgf_jaaaaa?stkn=MW8wdGgzOHBycTNzcA==" target="_blank" rel="noopener noreferrer" data-cursor="VIEW">INSTAGRAM ↗</a>
+          <a href="#archive" data-cursor="VIEW">ARCHIVE ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>ALLYA JANE REGENIO</span>
+    <span>© 2026</span>
+    <span>MADE WITH CURIOSITY / PHILIPPINES</span>
+  </footer>
+</body>
+</html>
