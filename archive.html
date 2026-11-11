@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Allya Jane Regenio — student, aspiring author, and visual creative.">
+  <meta name="theme-color" content="#f5f4ef">
+  <title>Allya Jane Regenio - About</title>
+  <link rel="icon" type="image/png" href="assets/allya-portrait.png">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script defer src="assets/vendor/gsap.min.js"></script>
+  <script defer src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script defer src="assets/vendor/lenis.min.js"></script>
+  <script defer src="assets/vendor/three.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="cursor" aria-hidden="true">
+    <span class="cursor__dot"></span>
+    <span class="cursor__label"></span>
+  </div>
+
+  <header class="site-nav">
+    <a class="nav-brand" href="#top" data-cursor="VIEW">AJR<span>/</span>26</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html" data-cursor="VIEW"><span>01</span> HOME</a>
+      <a href="about.html" data-cursor="VIEW"><span>02</span> ABOUT</a>
+      <a href="skills.html" data-cursor="VIEW"><span>03</span> SKILLS</a>
+      <a href="stories.html" data-cursor="READ"><span>04</span> STORIES</a>
+      <a href="archive.html" data-cursor="VIEW"><span>05</span> ARCHIVE</a>
+      <a href="film.html" data-cursor="VIEW"><span>06</span> FILM</a>
+      <a href="contact.html" data-cursor="VIEW"><span>07</span> CONTACT</a>
+    </nav>
+    <div class="nav-actions">
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Switch to dark mode"
+        aria-pressed="false"
+      >
+        <span>☀</span>
+        <i></i>
+        <span>☾</span>
+      </button>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+   <section class="archive section-shell" id="archive">
+      <div class="section-rule"><span>06</span><span>PHOTOGRAPHY / VISUAL ARCHIVE</span><span>INDEX 001—006</span></div>
+      <div class="archive-head">
+        <p class="eyebrow">LOOKING / COLLECTING</p>
+        <h2 class="display-title">VISUAL<br><em>ARCHIVE</em></h2>
+      </div>
+      <div class="archive-grid">
+        <figure class="archive-item archive-item--a" data-cursor="VIEW">
+          <div class="archive-img img-a"><img src="assets/archive-1.jpg" alt="Archive photo 1" loading="lazy"
+              onerror="this.remove()"><span>IMAGE / 001</span></div>
+          <figcaption>QUIET / FRAME 01</figcaption>
+        </figure>
+        <figure class="archive-item archive-item--b" data-cursor="VIEW">
+          <div class="archive-img img-b"><img src="assets/archive-2.jpg" alt="Archive photo 2" loading="lazy"
+              onerror="this.remove()"><span>IMAGE / 002</span></div>
+          <figcaption>LIGHT / FRAME 02</figcaption>
+        </figure>
+        <figure class="archive-item archive-item--c" data-cursor="VIEW">
+          <div class="archive-img img-c"><img src="assets/archive-3.jpg" alt="Archive photo 3" loading="lazy"
+              onerror="this.remove()"><span>IMAGE / 003</span></div>
+          <figcaption>DETAIL / FRAME 03</figcaption>
+        </figure>
+        <figure class="archive-item archive-item--d" data-cursor="VIEW">
+          <div class="archive-img img-d"><img src="assets/archive-4.jpg" alt="Archive photo 4" loading="lazy"
+              onerror="this.remove()"><span>IMAGE / 004</span></div>
+          <figcaption>PLACE / FRAME 04</figcaption>
+        </figure>
+        <figure class="archive-item archive-item--e" data-cursor="VIEW">
+          <div class="archive-img img-e"><img src="assets/archive-5.jpg" alt="Archive photo 5" loading="lazy"
+              onerror="this.remove()"><span>IMAGE / 005</span></div>
+          <figcaption>MOMENT / FRAME 05</figcaption>
+        </figure>
+        <figure class="archive-item archive-item--f" data-cursor="VIEW">
+          <div class="archive-img img-f"><img src="assets/archive-6.jpg" alt="Archive photo 6" loading="lazy"
+              onerror="this.remove()"><span>IMAGE / 006</span></div>
+          <figcaption>MEMORY / FRAME 06</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="music" id="music">
+      <div class="section-rule"><span>07</span><span>SOUNDTRACK FOR IMAGINATION</span><span>PLAY / PAUSE</span></div>
+      <div class="music-grid">
+        <div>
+          <p class="eyebrow">MUSIC / INSPIRATION</p>
+          <h2 class="display-title">SOUNDTRACK<br><em>FOR<br>IMAGINATION</em></h2>
+        </div>
+        <div class="music-copy">
+          <p>Music is one of the things that inspires my creativity, especially when I'm writing. A song can become a
+            mood, a scene, a character, or the beginning of an entire story.</p>
+          <div class="player">
+            <button class="play-button" type="button" aria-label="Play music"><span>PLAY</span><i>▶</i></button>
+            <button class="track is-active" type="button" data-track="assets/Kathangisip.mp3"><span>TRACK
+                01</span><b>KATHANG ISIP</b><em>MOIRA DELA TORRE</em></button>
+            <button class="track" type="button" data-track="assets/Isalang.mp3"><span>TRACK
+                02</span><b>ISALANG</b><em>MOIRA DELA TORRE</em></button>
+            <button class="track" type="button" data-track="assets/Tagpuan.mp3"><span>TRACK
+                03</span><b>TAGPUAN</b><em>MOIRA DELA TORRE</em></button>
+            <div class="now-playing mono" data-now-playing hidden></div>
+            <div class="waveform" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="ALLYA JANE REGENIO — FILM / MOVIE SCREENING.">
+
+    <meta name="theme-color" content="#f3f1eb">
+
+    <title>Allya Jane Regenio - FILM</title>
+
+    <link rel="icon" type="image/png" href="assets/allya-portrait.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="assets/vendor/gsap.min.js"></script>
+    <script defer src="assets/vendor/ScrollTrigger.min.js"></script>
+    <script defer src="assets/vendor/lenis.min.js"></script>
+    <script defer src="assets/vendor/three.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+
+<body>
+
+    <!-- =========================
+       LOADER
+  ========================= -->
+
+    <div class="loader" aria-hidden="true">
+
+        <div class="loader__top">
+            <span>ALLYA JANE REGENIO</span>
+            <span class="mono">FILM / 2026</span>
+        </div>
+
+        <div class="loader__name" data-loader-name>
+            FILM
+        </div>
+
+        <div class="loader__bottom">
+            <span>LOADING SCREENING ROOM</span>
+            <span class="loader__count" data-loader-count>00</span>
+        </div>
+
+        <div class="loader__bar">
+            <span></span>
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+       CUSTOM CURSOR
+  ========================= -->
+
+    <div class="cursor" aria-hidden="true">
+        <span class="cursor__dot"></span>
+        <span class="cursor__label"></span>
+    </div>
+
+
+    <!-- =========================
+       NAVIGATION
+  ========================= -->
+
+    <header class="site-nav">
+
+        <a class="nav-brand" href="index.html" data-cursor="BACK">
+            AJR<span>/</span>26
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+        
+            <a href="index.html" data-cursor="VIEW">
+                <span>01</span> HOME
+            </a>
+        
+            <a href="about.html" data-cursor="VIEW">
+                <span>02</span> ABOUT
+            </a>
+        
+            <a href="skills.html" data-cursor="VIEW">
+                <span>03</span> SKILLS
+            </a>
+        
+            <a href="stories.html" data-cursor="READ">
+                <span>04</span> STORIES
+            </a>
+        
+            <a href="archive.html" data-cursor="VIEW">
+                <span>05</span> ARCHIVE
+            </a>
+    
+            
+            <a href="film.html" data-cursor="VIEW">
+                <span>06</span> FILM
+            </a>
+
+            <a href="contact.html" data-cursor="VIEW">
+                <span>07</span> CONTACT
+            </a>
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+                <span>☀</span>
+                <i></i>
+                <span>☾</span>
+            </button>
+
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+       MAIN FILM PAGE
+  ========================= -->
+
+    <main id="top" class="film-page">
+
+
+        <!-- =========================
+         FILM INTRO
+    ========================= -->
+
+        <section class="film-hero">
+
+            <div class="film-hero__meta">
+
+                <div>
+                    <span class="section-index">07 / FILM</span>
+                    <span>SHORT FILM / VISUAL WORK</span>
+                    <span>2026</span>
+                </div>
+
+                <div class="film-hero__number mono">
+                    001
+                </div>
+
+            </div>
+
+
+            <div class="film-hero__title">
+
+                <p class="eyebrow">
+                    ORIGINAL SCREENING
+                </p>
+
+                <h1 class="display-title">
+                    <span>THE</span>
+                    <span>FILM<em>.</em></span>
+                </h1>
+
+            </div>
+
+
+            <div class="film-hero__intro">
+
+                <p>
+                    A visual story created by our team.
+                    Watch the film below.
+                </p>
+
+                <span class="mono">
+                    ↓ SCROLL TO SCREEN
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         FILM SCREEN
+    ========================= -->
+
+        <section class="film-screening">
+
+            <div class="section-rule">
+
+                <span>FILM / 001</span>
+
+                <span>NOW SCREENING</span>
+
+                <span>PLAY / FULLSCREEN</span>
+
+            </div>
+
+
+            <div class="film-frame">
+
+                <!--
+          Replace this video source with your actual film.
+
+          Example:
+          assets/film.mp4
+        -->
+
+                <video id="film-video" class="film-video" controls preload="metadata" poster="assets/film-poster.jpg"
+                    playsinline>
+
+                    <source src="assets/film.mp4" type="video/mp4">
+
+                    Your browser does not support the video element.
+
+                </video>
+
+
+                <div class="film-frame__overlay">
+
+                    <span class="film-frame__corner film-frame__corner--tl">
+                        PLAY
+                    </span>
+
+                    <span class="film-frame__corner film-frame__corner--tr">
+                        16:9
+                    </span>
+
+                    <span class="film-frame__corner film-frame__corner--bl">
+                        ALLYA JANE REGENIO
+                    </span>
+
+                    <span class="film-frame__corner film-frame__corner--br">
+                        2026
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="film-info">
+
+                <div class="film-info__title">
+                    <span class="mono">TITLE</span>
+
+                    <h2>
+                        OUR FILM
+                    </h2>
+                </div>
+
+
+                <div class="film-info__details">
+
+                    <div>
+                        <span class="mono">DIRECTED BY</span>
+                        <p>ALLYA JANE REGENIO</p>
+                    </div>
+
+                    <div>
+                        <span class="mono">PRODUCTION</span>
+                        <p>CREATIVE TEAM</p>
+                    </div>
+
+                    <div>
+                        <span class="mono">YEAR</span>
+                        <p>2026</p>
+                    </div>
+
+                    <div>
+                        <span class="mono">FORMAT</span>
+                        <p>SHORT FILM</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         FILM DESCRIPTION
+    ========================= -->
+
+        <section class="film-description">
+
+            <div class="film-description__label mono">
+                02 / ABOUT THE FILM
+            </div>
+
+
+            <div class="film-description__content">
+
+                <h2>
+                    A STORY
+                    <br>
+                    <em>IN MOTION.</em>
+                </h2>
+
+
+                <div class="film-description__copy">
+
+                    <p>
+                        This film is a collaborative visual project created
+                        through story, performance, direction, and design.
+                    </p>
+
+                    <p>
+                        Every frame was built to communicate an idea,
+                        transform a feeling into an image, and bring
+                        the story to life through moving pictures.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         CREDITS
+    ========================= -->
+
+        <section class="film-credits">
+
+            <div class="section-rule">
+
+                <span>CREDITS</span>
+                <span>THE TEAM</span>
+                <span>2026</span>
+
+            </div>
+
+
+            <div class="credits-list">
+
+                <div class="credit-row">
+                    <span class="mono">DIRECTOR</span>
+                    <strong>NIKKA BADIOLA</strong>
+                </div>
+
+                <div class="credit-row">
+                    <span class="mono">WRITER</span>
+                    <strong>BADIOLA / PON-AN</strong>
+                </div>
+
+                <div class="credit-row">
+                    <span class="mono">PRODUCTION</span>
+                    <strong>ALLYA JANE REGENIO</strong>
+                </div>
+
+                <div class="credit-row">
+                    <span class="mono">CAST</span>
+                    <strong>ALLYA JANE REGENIO</strong>
+                </div>
+
+                <div class="credit-row">
+                    <span class="mono">EDITING</span>
+                    <strong>FAITH PON-AN</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         ENDING
+    ========================= -->
+
+        <section class="film-end">
+
+            <span class="mono">
+                END OF SCREENING
+            </span>
+
+            <h2>
+                THANK
+                <br>
+                YOU<span>.</span>
+            </h2>
+
+            <a href="index.html" class="film-back" data-cursor="BACK">
+                ← RETURN TO PORTFOLIO
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+       FOOTER
+  ========================= -->
+
+    <footer>
+
+        <span>ALLYA JANE REGENIO</span>
+
+        <span>© 2026</span>
+
+        <span>FILM / VISUAL WORK / PHILIPPINES</span>
+
+    </footer>
+
+
+</body>
+
+</html>

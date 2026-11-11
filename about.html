@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Allya Jane Regenio — student, aspiring author, and visual creative.">
+  <meta name="theme-color" content="#f5f4ef">
+  <title>Allya Jane Regenio - About</title>
+  <link rel="icon" type="image/png" href="assets/allya-portrait.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script defer src="assets/vendor/gsap.min.js"></script>
+  <script defer src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script defer src="assets/vendor/lenis.min.js"></script>
+  <script defer src="assets/vendor/three.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  
+  <div class="cursor" aria-hidden="true">
+    <span class="cursor__dot"></span>
+    <span class="cursor__label"></span>
+  </div>
+
+  <header class="site-nav">
+    <a class="nav-brand" href="#top" data-cursor="VIEW">AJR<span>/</span>26</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html" data-cursor="VIEW"><span>01</span> HOME</a>
+      <a href="about.html" data-cursor="VIEW"><span>02</span> ABOUT</a>
+      <a href="skills.html" data-cursor="VIEW"><span>03</span> SKILLS</a>
+      <a href="stories.html" data-cursor="READ"><span>04</span> STORIES</a>
+      <a href="archive.html" data-cursor="VIEW"><span>05</span> ARCHIVE</a>
+      <a href="film.html" data-cursor="VIEW"><span>06</span> FILM</a>
+      <a href="contact.html" data-cursor="VIEW"><span>07</span> CONTACT</a>
+    </nav>
+    <div class="nav-actions">
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Switch to dark mode"
+        aria-pressed="false"
+      >
+        <span>☀</span>
+        <i></i>
+        <span>☾</span>
+      </button>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+    
+     <section class="about section-shell" id="about">
+      <div class="section-rule"><span>02</span><span>ABOUT / SELF-PORTRAIT</span><span>KEEP LOOKING</span></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">WHO I AM</p>
+          <h2 class="display-title">ABOUT<br><em>ME</em></h2>
+          <div class="bio">
+            <p>I'm Allya Jane Regenio, a student who is continuously learning and discovering what I can do. I may not
+              have everything figured out yet, but I believe that every experience helps me grow.</p>
+            <p>I enjoy learning new things and expressing myself creatively. I'm also an aspiring author who finds
+              comfort in the world of stories.</p>
+            <p>I enjoy writing because it gives me a place where my imagination can freely exist. I love creating
+              characters, building different worlds, and turning simple ideas into stories.</p>
+            <p>Music is one of the things that inspires my creativity, especially when I'm writing. Sometimes, a song
+              can give me an idea for a character, a scene, or even an entire story.</p>
+            <p>My dream is to become someone who is confident, successful, and happy with the life I built. I want to
+              develop my skills, overcome my weaknesses, and continue learning.</p>
+            <p>I know that reaching my dreams will take time and effort, but I'm willing to grow through every challenge
+              along the way.</p>
+          </div>
+        </div>
+
+        <div class="photo-stack" aria-label="Creative process gallery">
+          <div class="stack-label mono">A SMALL ARCHIVE OF<br>HOW I SEE THINGS</div>
+          <div class="photo-card photo-card--1" data-card="1">
+            <div class="photo-card__media photo-placeholder photo-placeholder--paper"><img src="assets/about-1.jpg"
+                alt="Creative process photo" loading="lazy" onerror="this.remove()"><span>IMAGE<br>01</span></div>
+            <div class="photo-card__caption"><b>01 / CREATIVE PROCESS</b><span>IDEAS BEFORE THEY BECOME THINGS.</span>
+            </div>
+          </div>
+          <div class="photo-card photo-card--2" data-card="2">
+            <div class="photo-card__media photo-placeholder photo-placeholder--ink"><img src="assets/about-2.jpg"
+                alt="Stories and worlds photo" loading="lazy" onerror="this.remove()"><span>IMAGE<br>02</span></div>
+            <div class="photo-card__caption"><b>02 / STORIES</b><span>WORLDS BUILT FROM SMALL THOUGHTS.</span></div>
+          </div>
+          <div class="photo-card photo-card--3" data-card="3">
+            <div class="photo-card__media photo-placeholder photo-placeholder--photo"><img src="assets/about-3.jpg"
+                alt="Visuals photo" loading="lazy" onerror="this.remove()"><span>IMAGE<br>03</span></div>
+            <div class="photo-card__caption"><b>03 / VISUALS</b><span>LOOKING CLOSER AT ORDINARY MOMENTS.</span></div>
+          </div>
+          <div class="photo-card photo-card--4" data-card="4">
+            <div class="photo-card__media photo-placeholder photo-placeholder--dark"><img src="assets/about-4.jpg"
+                alt="Moments photo" loading="lazy" onerror="this.remove()"><span>IMAGE<br>04</span></div>
+            <div class="photo-card__caption"><b>04 / MOMENTS</b><span>KEEPING WHAT FEELS WORTH REMEMBERING.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
